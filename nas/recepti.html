@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/recepti.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <title>KILL & GRILL</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 headerZaobljeno">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" style="height: 100px;"></a>
+                <a href="index.html" class="navbar-brand text-uppercase font-weight-bold">KILL & GRILL</a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link text-uppercase font-weight-bold">POČETNA <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item "><a href="o_nama.html" class="nav-link text-uppercase font-weight-bold" ">O NAMA</a></li>
+                        <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold" style="color: #EF233C;">RECEPTI</a></li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">NUTRICIONISTA</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">KONTAKT</a> -->
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold"
+                            onclick="document.getElementById('id01').style.display='block'">ULOGUJ SE</a>
+                        </li>
+                        <li class="nav-item"><a href="recepti.html"
+                            class="nav-link text-uppercase font-weight-bold">SR</a></li>
+    <li class="nav-item"><a href="engl/design-receipes-user.html" class="nav-link text-uppercase font-weight-bold">EN</a>
+    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- RECEPTI -->
+    <div class="parallax" style="margin-top: 145px;">
+        <div class="caption">
+            <span><i>RECEPTI</i></span>
+        </div>
+    </div>
+    <div class="container-fluid " >
+        <div class="row middle receptiMiddle" style="margin-top: 0px;">
+
+            <div class="menu-box" style="padding-top: 0px;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="heading-title text-center">
+
+                                    <!-- <div class="caption" style="position: inherit;">
+
+                                    </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row inner-menu-box">
+                        <div class="col-3 parallax" style="min-height: 500px;">
+
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active instancaRecepta" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="showRecipes();">Svi recepti</a>
+                                <a class="nav-link instancaRecepta" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="showRecipesCategory('Predjelo')">Predjelo</a>
+                                <a class="nav-link instancaRecepta" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="showRecipesCategory('Glavno jelo')">Glavno jelo</a>
+                                <a class="nav-link instancaRecepta" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="showRecipesCategory('Desert')">Desert</a>
+                                <a class="nav-link instancaRecepta" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="showRecipesCategory('Pica')">Pića</a>
+                                <input type="text" id="mySearch" placeholder="Pretrazi.." title="Type in a category">
+                                <button id="search">Pretrazi</button>
+                            </div>
+                        </div>
+
+                        <div class="col-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <div class="row recipesContent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    <!-- RECEPTI_END -->
+
+
+    <!-- FOOTER -->
+
+<div class="row footer-dark">
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Usluge</h3>
+                    <ul>
+                        <li><a href="#">Registuj se!</a></li>
+                        <li><a href="#">Potrebna ti je pomoć nutricioniste?</a></li>
+                        <li><a href="#">Kako pronaći recept?</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Informacije</h3>
+                    <ul>
+                        <li><a href="#">O nama</a></li>
+                        <li><a href="#">Pravila korišćenja</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>KILL & GRILL</h3>
+                    <p>Ako vam zatreba inspiracija, savet ili ideja za kuvanje, za svaki dan, posebnu priliku, za decu ili za svoju dušu mi smo tu da vam pomognemo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <div class="copyright"> © 2021 Copyright: Kristina Todorović, Zorana Cerovac
+                <a href="https://www.etf.bg.ac.rs/sr/studiranje/osnovne-akademske-studije/softversko-inzenjerstvo-si#gsc.tab=0"> Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu</a></div>
+        </div>
+    </footer>
+    </div>
+</div>
+    <!-- FOOTER_END -->
+
+       <!-- LOGIN -->
+<div id="id01" class="modal1">
+
+    <form class="modal-content1 animate">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+            <img src="images/avatarTrans.png" style="width: 200px;" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container1">
+            <label for="uname"><b>Korisničko ime</b></label>
+            <input type="text" id="username" placeholder="Unesite korisničko ime..." name="uname" required>
+
+            <label for="psw"><b>Lozinka</b></label>
+            <input type="password" id="password" placeholder="Unesite lozinku..." name="psw" required>
+            <button id="ulogujSe" class="buttonL" type="submit">Prijavi se</button>
+            </a>
+            <span>Nemate nalog? <a href="#"
+                                   onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'">Napravi nalog.</a></span>
+        </div>
+
+        <div class="container1" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn buttonL ">Odustani
+            </button>
+            <span class="psw">Zaboravio sam <a href="#">lozinku?</a></span>
+        </div>
+    </form>
+</div>
+<!-- LOGIN END -->
+
+<!-- REGISTRACIJA -->
+
+<div id="id02" class="modal2">
+    <span onclick="document.getElementById('id02').style.display='none'" class="closeR"
+          title="Close1 Modal">&times;</span>
+    <form class="modal-content">
+        <div class="container">
+            <h1>Registruj se</h1>
+            <p>Molim vas popunite polja kako biste kreirali nalog</p>
+            <hr>
+            <label for="email"><b>Korisničko ime</b></label>
+            <input type="text" id="usernameReg" placeholder="Unesite korisničko ime" name="username" required>
+
+            <label for="psw"><b>Šifra</b></label>
+            <input type="password" id="passwordReg" placeholder="Unesite šifru" name="psw" required>
+
+            <!-- <label for="psw-repeat"><b>Potvrda lozinke</b></label>
+            <input type="password" id="rrp" placeholder="Unesite lozinku" name="psw-repeat" required> -->
+
+            <p>Kreiranjem naloga saglasniste sa <a href="#" style="color:dodgerblue">Uslovima i politikom
+                korišćenja </a>.</p>
+
+            <div class="clearfixR">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                        class="cancelbtnR buttonR">Odustani
+                </button>
+                <button type="submit" class="signupbtnR buttonR" id="registrujSe">Registuj se</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- REGISTRACIJA END -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/users.js"></script>
+    <script type="text/javascript" src="js/recipes.js"></script>
+    <script type="text/javascript" src="js/ratings.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/recepti.js"></script>
+</body>
+</html>

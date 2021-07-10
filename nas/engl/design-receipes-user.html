@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/Galerija.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>KILL & GRILL/O NAMA</title>
+</head>
+<body>
+    <!-- HEADER-->
+    <div>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg fixed-top py-3 headerZaobljeno">
+                <div class="container">
+                    <a href="#" class="navbar-brand"><img src="../images/logo.png" style="height: 100px;"></a>
+                    <a href="#" class="navbar-brand text-uppercase font-weight-bold">KILL & GRILL</a>
+                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+    
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item "><a href="home.html" class="nav-link text-uppercase font-weight-bold">HOME</a></li>
+                            <li class="nav-item"><a href="about-us.html" class="nav-link text-uppercase font-weight-bold">ABOUT US</a></li>
+                            <li class="nav-item"><a href="recipes.html" class="nav-link text-uppercase font-weight-bold style="color: #EF233C;">RECIPES</a>
+                            </li>
+                            <!-- <li class="nav-item"><a href="#"
+                                                    class="nav-link text-uppercase font-weight-bold">NUTRITIONIST</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">CONTACT</a></li> -->
+                                <li class="nav-item"><a href="../konkretan-recept-user.html"
+                                    class="nav-link text-uppercase font-weight-bold">SR</a></li>
+            <li class="nav-item"><a href="design-receipes-user.html" class="nav-link text-uppercase font-weight-bold">EN</a></li>
+                        </ul>
+                         <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <img class="" href="#" src="../images/avatarTrans.png"
+                             style="min-width:70px; height: 70px; padding-left: 50px; ">
+                        <a href="my-account.html">My profile</a>
+                        <a href="home.html" class="odjaviSe">Log out</a>
+                    </div>
+
+                    <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><a class="nav-link ver-avatar"
+                                                                                           href="#">
+                          <img class="" href="#" src="../images/avatarTrans.png" style="width:70px; border-radius: 100%;">
+                      </a></span>
+                            <script src="js/korisnik.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+    
+    </div>
+    
+    
+    <!-- HEADER_END-->
+
+<!-- <div style="min-height: 100px;"></div> -->
+<div class="parallax" style="height: 80px; margin-bottom: 0px; margin-top: 145px; width: 100%;">
+    <div class="caption" style="position: inherit;">
+        <span><i id="recipeTitle"></i></span>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: white; min-height: 200px;">
+    
+    <button class="PDFexport" id="pdfBtn" style="margin-left: 0px;">DOWNLOAD PDF</button>
+    <div style="padding-left: 100px; padding-right: 100px;">
+        <p style="padding-top: 20px;">PREPARATION TIME: <span id="recipeTime"></span></p>
+        <p id="ocena"><i>RATE: <span style="font-size:200%;color:yellow; margin-right:0px;">&starf;</span><span
+                id="recipeRate"></span></i></p>
+        <img src="images/img-01.jpg" id="img1" style="width: 600px;" alt="">
+        <div id="recipeContent"></div>
+    </div>
+</div>
+<div class="parallax" style="height: 80px; margin-bottom: 0px;">
+    <div class="caption" style="position: inherit;">
+        <span><i>Photos</i></span>
+    </div>
+</div>
+<div class="container-fluid">
+    <div style="padding-left: 100px; padding-right: 100px;">
+        <div class="container slideshow-container">
+
+            <a href="#">
+                <div class="mySlides myfade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/bifteci/img3.jpeg" id="img2"
+                         style="width:700px; height: 500px; ; object-fit: cover;">
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="mySlides myfade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/bifteci/img2.jpeg" id="img3"
+                         style="width:700px; height:500px ; object-fit: cover;">
+
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="mySlides myfade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/bifteci/img4.jpeg" id="img4"
+                         style="width:700px; height:500px ; object-fit: cover;">
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="mySlides myfade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/bifteci/img5.jpeg" id="img5"
+                         style="width:700px; height:500px ; object-fit: cover;">
+
+                </div>
+            </a>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Video -->
+
+<div class="parallax" style="height: 80px; margin-bottom: 0px;">
+    <div class="caption" style="position: inherit;">
+        <span><i>See how to cook:</i></span>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: white;">
+    <div style="padding-left: 100px; padding-right: 100px;">
+        <iframe width="560" height="315" id="recipeVideo" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </iframe>
+    </div>
+</div>
+
+
+</div>
+<!-- KOMENTARI -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 recipeComments">
+        </div>
+    </div>
+    <!-- STARS -->
+    <div class="row">
+        <div class="col-sm-12">
+            <form>
+                <label>How many stars would you rate the meal with?
+                </label><br>
+
+                <span class="star-rating">
+                  <input type="radio" name="rating1" value="1" style="color: yellow;"><i></i>
+                  <input type="radio" name="rating1" value="2"><i></i>
+                  <input type="radio" name="rating1" value="3"><i></i>
+                  <input type="radio" name="rating1" value="4"><i></i>
+                  <input type="radio" name="rating1" value="5"><i></i>
+                </span>
+
+                <div class="clear"></div>
+                <hr class="survey-hr">
+                <label for="commentText"> Additional comment:</label><br/><br/>
+                <textarea cols="75" name="commentText" id="commentText" rows="5" style="width: 100%;"></textarea><br>
+                <br>
+                <div class="clear"></div>
+                <input style="background:rgba(78, 148, 119, 1);color:#fff;padding:12px;border:0" id="addComment"
+                       type="submit"
+                       value="Submit">&nbsp;
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Sign in!</a></li>
+                        <li><a href="#">Do you need the help of a nutritionist?</a></li>
+                        <li><a href="#">How to find a recipe?</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>KILL & GRILL</h3>
+                    <p>
+                        If you need inspiration, advice or an idea for cooking, for every day, a special occasion, for children
+                                                or for our soul we are here to help you.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                        href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <div class="copyright"> © 2021 Copyright: Kristina Todorović, Zorana Cerovac
+                <a href="https://www.etf.bg.ac.rs/sr/studiranje/osnovne-akademske-studije/softversko-inzenjerstvo-si#gsc.tab=0">
+                    Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade</a></div>
+        </div>
+    </footer>
+</div>
+
+<!-- FOOTER_END -->
+
+
+<!-- LOGIN -->
+<div id="id01" class="modal1">
+
+    <form class="modal-content1 animate">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+            <img src="../images/avatarTrans.png" style="width: 200px;" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container1">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" id="username" placeholder="Enter a username..." name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter password..." name="psw" required>
+            <button id="ulogujSe" class="buttonL" type="submit">Log in</button>
+            </a>
+            <span>Do not have an account? <a href="#"
+                                   onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'">
+                                   Create your account.</a></span>
+        </div>
+
+        <div class="container1" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn buttonL ">Back
+            </button>
+            <span class="psw">I forgot my<a href="#"> password?</a></span>
+        </div>
+    </form>
+</div>
+<!-- LOGIN END -->
+
+<!-- REGISTRACIJA -->
+
+<div id="id02" class="modal2">
+    <span onclick="document.getElementById('id02').style.display='none'" class="closeR"
+          title="Close1 Modal">&times;</span>
+    <form class="modal-content">
+        <div class="container">
+            <h1>Sign up</h1>
+            <p>Please fill in the fields to create an account</p>
+            <hr>
+            <label for="email"><b>Username</b></label>
+            <input type="text" id="usernameReg" placeholder="Enter a username..." name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="passwordReg" placeholder="Enter a password..." name="psw" required>
+
+            <!-- <label for="psw-repeat"><b>Potvrda lozinke</b></label>
+            <input type="password" id="rrp" placeholder="Unesite lozinku" name="psw-repeat" required> -->
+
+            <p> By creating an account you agree to the <ahref="#"style="color:dodgerblue"> Terms and Policies
+                usage </a>. </p>
+
+            <div class="clearfixR">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                        class="cancelbtnR buttonR">Back
+                </button>
+                <button type="submit" class="signupbtnR buttonR" id="registrujSe">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- REGISTRACIJA END -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="js/users.js"></script>
+<script type="text/javascript" src="js/recipes.js"></script>
+<script type="text/javascript" src="js/ratings.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/recepti.js"></script>
+<script src="js/slideShow.js"></script>
+
+</body>
+</html>

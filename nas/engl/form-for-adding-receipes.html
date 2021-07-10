@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/oNama.css">
+    <link rel="stylesheet" href="css/forma.css">
+    <title>KILL & GRILL</title>
+</head>
+<body>
+
+<!-- HEADER-->
+<div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 headerZaobljeno">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="../images/logo.png" style="height: 100px;"></a>
+                <a href="#" class="navbar-brand text-uppercase font-weight-bold">KILL & GRILL</a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="home-user.html"
+                                                       class="nav-link text-uppercase font-weight-bold"
+                                                       style="color: #EF233C;">HOME</a></li>
+                        <li class="nav-item"><a href="about-us-user.html" class="nav-link text-uppercase font-weight-bold">ABOUT US</a></li>
+                        <li class="nav-item"><a href="recipes-user.html" class="nav-link text-uppercase font-weight-bold">RECIPES</a>
+                        </li>
+                        <!-- <li class="nav-item"><a href="#"
+                                                class="nav-link text-uppercase font-weight-bold">NUTRITIONIST</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">CONTACT</a> -->
+                        </li>
+                        <li class="nav-item"><a href="../formaZaDodavanjeRecepta.html"
+                            class="nav-link text-uppercase font-weight-bold">SR</a></li>
+    <li class="nav-item"><a href="form-for-adding-receipes.html" class="nav-link text-uppercase font-weight-bold">EN</a></li>
+                    </ul>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <img class="" href="#" src="../images/avatarTrans.png"
+                             style="min-width:70px; height: 70px; padding-left: 50px; ">
+                        <a href="my-account.html">My profile</a>
+                        <a href="home-user.html" class="odjaviSe">Log out</a>
+                    </div>
+
+                    <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><a class="nav-link ver-avatar"
+                                                                                           href="#">
+                          <img class="" href="#" src="../images/avatarTrans.png" style="width:70px; border-radius: 100%;">
+                      </a></span>
+                            <script src="js/korisnik.js"></script>
+                        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+</div>
+
+
+<!-- HEADER_END-->
+
+<div class="container" style="margin-top: 145px;">
+    <div class="middle">
+        <div class="testbox">
+            <form action="/">
+                <div class="banner">
+                    <img src="../images/dodatne/proba1.jpg" alt=""
+                         style="height:200px; width: 1000px; object-fit: cover; mask-repeat: no-repeat;">
+                </div>
+                <div class="item">
+                    <label for="name">Recipe name<span style="color: red;">*</span></label>
+                    <input id="titleRecipe" type="text" name="name" required/>
+                </div>
+                <hr>
+                <div class="item">
+                    <label for="vremePripreme">Preparation time<span style="color: red;">*</span></label>
+                    <input id="timeRecipe" type="text" name="vremePripreme" required/>
+                </div>
+                <hr>
+                <div class="item">
+                    <label for="tezinaPripreme">Weight of preparation<span style="color: red;">*</span></label>
+                    <div>
+                        <input type="radio" value="Lako" id="radio_1" name="typeRecipe"/>
+                        <label for="radio_1" class="radio" value="1"></label><span style="color: rgb(133, 194, 42);">Easy</span>
+                    </div>
+                    <div>
+                        <input type="radio" value="Srednje" id="radio_2" name="typeRecipe"/>
+                        <label for="radio_2" class="radio" value="2"></label><span style="color: rgb(228, 159, 11);">
+                            Medium</span>
+                    </div>
+                    <div>
+                        <input type="radio" value="Tesko" id="radio_3" name="typeRecipe"/>
+                        <label for="radio_3" class="radio" value="3"></label><span style="color: rgb(228, 56, 26);">Hard</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <label for="kategorijaRecepta">Recipe category<span style="color: red;">*</span></label>
+                    <div>
+                        <select id="kategorijaRecepta">
+                            <!-- <option selected value="" disabled selected></option> -->
+                            <option value="Predjelo" selected>Appetizer</option>
+                            <option value="Glavno">Main course</option>
+                            <option value="Dezert">Dessert</option>
+                            <option value="Piće">Drins</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <label for="state">Recipe<span style="color: red;">*</span></label>
+                    <textarea rows="5" cols="50" id="contentRecipe" name="contentRecipe" form="usrform">
+                        </textarea>
+                </div>
+                <hr>
+                <div class="item">
+                    <label for="linkVidea">Video link<span style="color: red;">*</span></label>
+                    <input id="videoRecipe" type="text" name="linkVidea" required/>
+                </div>
+                <hr>
+                <div class="item">
+                    <label for="zip">Photos<span style="color: red;">*</span></label>
+                    <input type="file" id="fileInput"/>
+                </div>
+
+                <input style="background:rgba(78, 148, 119, 1);color:#fff;padding:12px;border:0" id="addRecipe"
+                       type="submit"
+                       value="Dodaj recept">&nbsp;
+            </form>
+        </div>
+
+    </div>
+</div>
+
+!-- FOOTER -->
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Sign in!</a></li>
+                        <li><a href="#">Do you need the help of a nutritionist?</a></li>
+                        <li><a href="#">How to find a recipe?</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>KILL & GRILL</h3>
+                    <p>
+                        If you need inspiration, advice or an idea for cooking, for every day, a special occasion, for children
+                                                or for our soul we are here to help you.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                        href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <div class="copyright"> © 2021 Copyright: Kristina Todorović, Zorana Cerovac
+                <a href="https://www.etf.bg.ac.rs/sr/studiranje/osnovne-akademske-studije/softversko-inzenjerstvo-si#gsc.tab=0">
+                    Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade</a></div>
+        </div>
+    </footer>
+</div>
+
+<!-- FOOTER_END -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="js/users.js"></script>
+<script type="text/javascript" src="js/recipes.js"></script>
+<script type="text/javascript" src="js/ratings.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/recepti.js"></script>
+</body>
+</html>

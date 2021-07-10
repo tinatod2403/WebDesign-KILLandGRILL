@@ -1,0 +1,69 @@
+.cardNamirnice{
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    background-color: rgba(7, 7, 7, 0);
+    border: none;
+    box-shadow: none;
+    
+  }
+  
+  
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .namirnice li{
+      display: inline-block;
+  }
+
+  .namirnice{
+    padding-bottom: 0px;
+  }
+
+  
+
+  .namirnica{
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 15px;
+    width: 200px;
+    height: 200px; 
+    object-fit: scale-down; 
+    margin: 0px;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 3px;
+    
+  }
+
+  .namirnica:hover{
+    margin-top: 15px;
+    width: 220px;
+    height: 220px; 
+    object-fit: scale-down; 
+    margin: 0px;
+    display: inline-block;
+    padding: 3px;
+    background-color: whitesmoke;
+  }
+
+  .blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+  }
+  
+  .blockquote-custom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+  }
+
+
+

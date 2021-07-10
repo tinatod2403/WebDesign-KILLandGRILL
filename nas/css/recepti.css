@@ -1,0 +1,157 @@
+
+
+.receptiMiddle{
+    background-color: white;
+    margin-top: 145px;
+    display: flex;
+    justify-content: center;
+    min-height: 520px;
+}
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(superslides.css);
+@import url(baguetteBox.min.css);
+
+
+.menu-box{
+	padding: 70px 0px;
+}
+
+.heading-title{
+	margin-bottom: 50px;
+}
+.heading-title h2{
+	color: #010101;
+	font-size: 28px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+}
+.heading-title p{
+	font-size: 18px;
+	font-weight: 200;
+	margin: 0px;
+}
+
+.inner-menu-box{}
+.inner-menu-box .nav-pills .nav-link.active{
+	background: rgba(239, 35, 60, 0.5);
+}
+.inner-menu-box .nav-pills .nav-link{
+	font-size: 18px;
+}
+.inner-menu-box .nav-pills .nav-link:hover{
+	background: rgba(239, 35, 60, 0.5);
+	color: #ffffff;
+}
+
+.gallery-single{
+	margin-bottom: 10px;
+}
+
+.gallery-single {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.why-text {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    height: 100%;
+    background: rgba(66, 52, 54, 0.7);
+    padding: 12px 12px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.why-text h4{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Rubik', sans-serif;
+}
+.why-text p{
+	color: #ffffff;
+	font-size: 13px;
+	border-bottom: 1px dashed #010101;
+	margin: 0px;
+	padding-bottom: 15px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.why-text h5{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.gallery-single:hover .why-text{
+	bottom: 0px;
+}
+
+.fix{
+    height: 140px;
+	width: 280px;
+    object-fit: fill;
+}
+
+.instancaRecepta{
+    color: rgb(4, 4, 8);
+    /* font-size: 30px; */
+}
+
+.ponude{
+    background-color: rgba(66, 52, 54, 0.7);
+   
+}
+
+.fix img{
+	height: 140px; 
+	width: 100%;
+	object-fit: cover;
+}
+
+.obrisi {
+	background-color: #af684c;
+	border: none;
+	color: white;
+	margin-top: 0px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+  .mojRecept{
+	  border-color: gray;
+  }
+
+  .noviRecept{
+	background-color: #60af4c;
+	border: none;
+	color: white;
+	/* margin-top: 0px; */
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-top: 16px;
+  }

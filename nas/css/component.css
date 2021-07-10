@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor:pointer;
+}
+
+.fa:hover{
+	color:#fff;
+
+}
+
+/* makes the font 33% larger relative to the icon container */
+
+.fa-2x {
+  font-size: 2em;
+}
+
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+   
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+} 
+.fa-user:before {
+  content: "\f007";
+}
+.fa-comment:before {
+  content: "\f075";
+}
+.fa-info:before {
+  content: "\f129";
+}
+/* Form CSS*/
+
+.ccform{
+	
+}
+.ccfield-prepend{
+	margin-bottom:10px;
+	width:100%;
+}
+
+.ccform-addon{
+	color:#f8ae45; 
+	float:left;
+	padding:7.1px;
+	width:8%;
+	background:#e28100;
+	text-align:center;	
+}
+
+.ccformfield {
+	color:#000000; 
+	background:#FFFFFF;
+	border:none;
+	padding:15.5px;
+	width:91.9%;
+	display:block;
+	font-family: 'Lato',Arial,sans-serif;
+	font-size:14px;
+}
+
+.ccformfield {
+	font-family: 'Lato',Arial,sans-serif;
+}
+.ccbtn{
+	display:block;
+	border:none;
+	background:#f8ae45;
+	float:right;
+	color:#FFFFFF;
+	padding:10px;
+	cursor:pointer;
+	text-decoration:none;
+	font-weight:bold;
+}
+.ccbtn:hover{
+	background:#d8850e;
+
+}
